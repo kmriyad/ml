@@ -16,11 +16,9 @@ p = zeros(m, 1);
 %
 
 
-if(sigmoid(X * theta) >= 0.5)
-    p = 1;
-else
-    p = 0;
-
+for i=1:m,
+    if sigmoid(X(i, :)*theta) >= 0.5, p(i)=1;
+end;
 
 
 
