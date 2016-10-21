@@ -1,4 +1,5 @@
 %% Meshgrid
+% source: http://www.uwyo.edu/kubelka-chem/lecture_notes_12.pdf
 % The meshgrid() function transforms the domain specified by a single 
 % vector or two vectors x and y into matrices X and Y for use in evaluating
 % functions of two variables. The rows of X are copies of the vector x and 
@@ -25,13 +26,11 @@ Z = sin(R)./ R;
 % use default colormap to color the mesh
 mesh(X, Y, Z);
 
-fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 % use a single colored mesh by specifiying the EdgeColor surface property
 mesh(X, Y, Z, 'EdgeColor', 'black');
 
-fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 % create a mesh with see-through faces by disabling hidden line removal
